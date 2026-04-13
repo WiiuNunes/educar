@@ -1,6 +1,7 @@
 "use client";
 
 import DashboardLayout from "../../components/DashboardLayout";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 /**
@@ -26,7 +27,7 @@ export default function AlunoDashboard() {
                         </div>
                         <div className={styles.statValue}>2</div>
                         <div className={styles.statDesc}>Cursos matriculados</div>
-                        <a href="/aluno/cursos" className={styles.statLink}>VER TODOS</a>
+                        <Link href="/aluno/cursos" className={styles.statLink}>VER TODOS</Link>
                     </div>
 
                     <div className={styles.statCard}>
@@ -36,7 +37,7 @@ export default function AlunoDashboard() {
                         </div>
                         <div className={styles.statValue}>3</div>
                         <div className={styles.statDesc}>Atividades pendentes</div>
-                        <a href="/aluno/cursos?tab=atividades" className={styles.statLink}>VER TODAS</a>
+                        <Link href="/aluno/cursos?tab=atividades" className={styles.statLink}>VER TODAS</Link>
                     </div>
 
                     <div className={styles.statCard}>
@@ -46,7 +47,7 @@ export default function AlunoDashboard() {
                         </div>
                         <div className={styles.statValue}>2</div>
                         <div className={styles.statDesc}>Novas notificações</div>
-                        <a href="#" className={styles.statLink}>VER TODAS</a>
+                        <Link href="#" className={styles.statLink}>VER TODAS</Link>
                     </div>
                 </div>
 
@@ -91,7 +92,7 @@ export default function AlunoDashboard() {
                             </div>
                         </div>
 
-                        <a href="/aluno/cursos?tab=atividades" className={styles.btnOutline} style={{ textAlign: 'center', display: 'block', textDecoration: 'none' }}>VER TODAS AS ATIVIDADES</a>
+                        <Link href="/aluno/cursos?tab=atividades" className={styles.btnOutline} style={{ textAlign: 'center', display: 'block', textDecoration: 'none' }}>VER TODAS AS ATIVIDADES</Link>
                     </div>
 
                     <div className={styles.listCard}>
@@ -152,8 +153,8 @@ export default function AlunoDashboard() {
                                     <span className={styles.progressText}>65%</span>
                                 </div>
                                 <div className={styles.trilhaActions}>
-                                    <a href="#">CONTINUAR</a>
-                                    <a href="#">VER DETALHES</a>
+                                    <Link href="#">CONTINUAR</Link>
+                                    <Link href="#">VER DETALHES</Link>
                                 </div>
                             </div>
                         </div>
@@ -168,8 +169,8 @@ export default function AlunoDashboard() {
                                     <span className={styles.progressText}>30%</span>
                                 </div>
                                 <div className={styles.trilhaActions}>
-                                    <a href="#">CONTINUAR</a>
-                                    <a href="#">VER DETALHES</a>
+                                    <Link href="#">CONTINUAR</Link>
+                                    <Link href="#">VER DETALHES</Link>
                                 </div>
                             </div>
                         </div>
@@ -184,8 +185,8 @@ export default function AlunoDashboard() {
                                     <span className={styles.progressText}>10%</span>
                                 </div>
                                 <div className={styles.trilhaActions}>
-                                    <a href="#">CONTINUAR</a>
-                                    <a href="#">VER DETALHES</a>
+                                    <Link href="#">CONTINUAR</Link>
+                                    <Link href="#">VER DETALHES</Link>
                                 </div>
                             </div>
                         </div>

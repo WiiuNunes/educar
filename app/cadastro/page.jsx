@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 /**
  * Cadastro Wizard Pattern
@@ -182,7 +183,7 @@ export default function Cadastro() {
                 </div>
 
                 <div className={styles.loginLink}>
-                    <a href="/">Já tem uma conta? Faça login</a>
+                    <Link href="/">Já tem uma conta? Faça login</Link>
                 </div>
             </div>
         </div>

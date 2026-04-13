@@ -1,6 +1,7 @@
 "use client";
 
 import DashboardLayout from "../../components/DashboardLayout";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 // View do professor logado
@@ -23,7 +24,7 @@ export default function ProfessorDashboard() {
                         </div>
                         <div className={styles.statValue}>0</div>
                         <div className={styles.statDesc}>Turmas ativas</div>
-                        <a href="#" className={styles.statLink}>VER DETALHES</a>
+                        <Link href="#" className={styles.statLink}>VER DETALHES</Link>
                     </div>
 
                     <div className={styles.statCard}>
@@ -33,7 +34,7 @@ export default function ProfessorDashboard() {
                         </div>
                         <div className={styles.statValue}>0</div>
                         <div className={styles.statDesc}>Atividades pendentes</div>
-                        <a href="#" className={styles.statLink}>VER DETALHES</a>
+                        <Link href="#" className={styles.statLink}>VER DETALHES</Link>
                     </div>
 
                     <div className={styles.statCard}>
@@ -43,7 +44,7 @@ export default function ProfessorDashboard() {
                         </div>
                         <div className={styles.statValue}>12</div>
                         <div className={styles.statDesc}>Materiais publicados</div>
-                        <a href="#" className={styles.statLinkBtn}>VER DETALHES</a>
+                        <Link href="#" className={styles.statLinkBtn}>VER DETALHES</Link>
                     </div>
                 </div>
 

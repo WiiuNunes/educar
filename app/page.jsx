@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 /**
@@ -100,9 +101,9 @@ export default function LoginPage() {
         </div>
 
         <div className={styles.links}>
-          <a href="/cadastro">Não tem uma conta? Cadastre-se</a>
+          <Link href="/cadastro">Não tem uma conta? Cadastre-se</Link>
           <br />
-          <a href="#">Esqueceu sua senha?</a>
+          <Link href="#">Esqueceu sua senha?</Link>
         </div>
       </div>
     </div>
