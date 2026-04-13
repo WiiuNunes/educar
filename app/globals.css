@@ -1,0 +1,49 @@
+/* 
+   Projeto de Extensão - ADS
+   Cores globais para a plataforma Educa+
+   Decidimos usar verde para remeter à sustentabilidade!
+*/
+:root {
+  --cor-principal: #0091b2;
+  /* Azul principal */
+  --cor-secundaria: #14becf;
+  /* Azul claro secundario */
+  --cor-fundo: #fdfdfd;
+  /* Fundo branco off */
+  --cor-texto: #333333;
+  --cor-bordas: #cccccc;
+  --cor-erro: #d32f2f;
+  --cor-sucesso: #14becf;
+  --cor-branco: #ffffff;
+  --cor-destaque: #043c6c;
+  /* Azul escuro */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Fonte simples pra não dar erro no PC da faculdade */
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+a {
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utilitários */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

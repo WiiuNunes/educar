@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--cor-fundo);
+}
+
+.header {
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 500px;
+  margin-top: 50px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+.formContainer {
+  background-color: var(--cor-branco);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.formContainer h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Estilização dos inputs usando os grids ensinados nas aulas */
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--cor-bordas);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--cor-principal);
+}
+
+.btnEntrar {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--cor-principal);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btnEntrar:hover {
+  background-color: var(--cor-destaque);
+}
+
+.demoButtonsRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.btnDemo {
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  color: var(--cor-principal);
+  border: 1px solid var(--cor-principal);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btnDemo:hover {
+  background-color: #e1f5fe;
+}
+
+.links {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 2;
+}

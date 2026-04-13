@@ -1,0 +1,351 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.turmaInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.turmaName {
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    font-weight: normal;
+}
+
+.tabsContainer {
+    display: flex;
+    border-bottom: 1px solid var(--cor-bordas);
+    margin-bottom: 20px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #777;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab:hover {
+    color: var(--cor-principal);
+}
+
+.activeTab {
+    color: var(--cor-principal);
+    border-bottom-color: var(--cor-principal);
+}
+
+.tabContent {
+    flex: 1;
+}
+
+/* Materiais Grid */
+.materiaisGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.materialCard {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+}
+
+.materialCard h3 {
+    font-size: 1.1rem;
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.tagCinza {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-bottom: 15px;
+}
+
+.materialCard p {
+    font-size: 0.85rem;
+    color: var(--cor-texto);
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.btnAcessar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnAcessar:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* Atividades */
+.atividadesColumns {
+    display: flex;
+    gap: 30px;
+}
+
+.columnLeft {
+    flex: 2;
+}
+
+.columnRight {
+    flex: 1;
+}
+
+.columnLeft h4,
+.columnRight h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.atividadeCard {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.atividadeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.atvTitle {
+    font-size: 1.1rem;
+    color: var(--cor-principal);
+    font-weight: normal;
+}
+
+.tagVerde {
+    background-color: #14becf;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+}
+
+.tagVerdeEscuro {
+    background-color: #0091b2;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+}
+
+.atividadeCard p {
+    font-size: 0.85rem;
+    color: var(--cor-texto);
+    margin-bottom: 15px;
+}
+
+.atividadeProgress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.progressTrack {
+    flex: 1;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+}
+
+.progressFill {
+    height: 100%;
+    background-color: var(--cor-principal);
+    border-radius: 2px;
+}
+
+.progressText {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.atividadeFooter {
+    display: flex;
+}
+
+.atividadeMeta {
+    flex: 1;
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.atividadeActions {
+    display: flex;
+    gap: 10px;
+}
+
+.btnOutline {
+    background: transparent;
+    border: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnSolid {
+    background: var(--cor-principal);
+    color: white;
+    border: 1px solid var(--cor-principal);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.emptyState {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: var(--cor-texto);
+    font-size: 0.9rem;
+}
+
+/* Forum */
+.novaDiscussaoCard {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.novaDiscussaoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.novaDiscussaoHeader h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.btnSolidNova {
+    background: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.novaDiscussaoCard p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.discussoesRecentes h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.discussaoItem {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discTitle {
+    font-size: 1rem;
+    color: var(--cor-principal);
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.discMeta,
+.discSubMeta {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.discSubMeta {
+    color: #999;
+}
+
+.discussaoActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.respostasCount {
+    font-size: 0.75rem;
+    background: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: #555;
+}
+
+.btnOutlineDisc {
+    background: transparent;
+    border: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}

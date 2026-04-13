@@ -1,0 +1,219 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.iconHats {
+    font-size: 3rem;
+    color: var(--cor-principal);
+    margin-bottom: 5px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    color: var(--cor-principal);
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+}
+
+.formContainer {
+    background-color: var(--cor-branco);
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Stepper */
+.stepperContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.stepItem {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.activeText {
+    color: var(--cor-texto);
+}
+
+.stepCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #999;
+    color: white;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.stepCircleActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--cor-principal);
+    color: white;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.stepLine {
+    width: 30px;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+/* Alert */
+.alertError {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+/* Form inputs */
+.stepContent {
+    min-height: 200px;
+}
+
+.inputGroup {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.inputGroup label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 0.75rem;
+    color: var(--cor-principal);
+}
+
+.inputField {
+    width: 100%;
+    padding: 15px 15px;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: var(--cor-principal);
+}
+
+.radioGroupWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.radioGroupLabel {
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 20px;
+}
+
+.radioGroup label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Buttons */
+.navButtonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.btnVoltar {
+    background: transparent;
+    border: 1px solid var(--cor-principal);
+    color: var(--cor-principal);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnVoltarDisabled {
+    background: transparent;
+    border: 1px solid var(--cor-bordas);
+    color: var(--cor-bordas);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: not-allowed;
+}
+
+.btnProximo {
+    background: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnProximo:hover {
+    background: var(--cor-destaque);
+}
+
+.loginLink {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.loginLink a {
+    color: #5c6bc0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}

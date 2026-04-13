@@ -1,0 +1,19 @@
+# Dependências — nunca sobe para o Git
+node_modules/
+
+# Pasta gerada pelo Next.js no build
+.next/
+out/
+
+# Variáveis de ambiente — NUNCA suba esse arquivo, contém senhas e chaves
+.env
+.env.local
+.env.production
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

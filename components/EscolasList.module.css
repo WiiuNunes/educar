@@ -1,0 +1,34 @@
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.item {
+  background-color: var(--cor-card);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.icone {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.nome {
+  font-weight: bold;
+  color: var(--cor-primaria);
+  display: block;
+}
+
+.nivel {
+  font-size: 0.88rem;
+  color: #666;
+}

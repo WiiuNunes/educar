@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: var(--cor-texto);
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: var(--cor-branco);
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cardImg {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardBody {
+    padding: 20px;
+}
+
+.cardBody h3 {
+    font-size: 1.1rem;
+    color: var(--cor-principal);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.cardBody p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.statusBox {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.statusAberto {
+    background: #e0f2f1;
+    color: #00897b;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.statusFechado {
+    background: #ffebee;
+    color: #e53935;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btnSolid {
+    background: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+}
+
+.btnOutline {
+    background: transparent;
+    color: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+}
+
+.btnOutline:hover {
+    background: #f1f8eb;
+    /* teal tint */
+}

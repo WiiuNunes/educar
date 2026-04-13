@@ -1,0 +1,190 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    color: var(--cor-texto);
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Filtros */
+.filtersBar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: flex-end;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background: white;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.searchIcon {
+    color: #999;
+    margin-right: 8px;
+}
+
+.searchInput input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.filterGroup {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.filterGroup label {
+    font-size: 0.75rem;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.filterGroup select {
+    height: 40px;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 4px;
+    background: white;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+    outline: none;
+}
+
+.filterGroup select:focus {
+    border-color: var(--cor-principal);
+}
+
+/* Grid de cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid var(--cor-bordas);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cardImgContainer {
+    height: 160px;
+    width: 100%;
+    position: relative;
+    background-color: #e0e0e0;
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badgeTipo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 145, 178, 0.9);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.cardBody {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cardBody h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: var(--cor-texto);
+    margin-bottom: 5px;
+}
+
+.metaInfo {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #f0f0f0;
+    color: #555;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.cardActions {
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.cardActions button {
+    background: none;
+    border: none;
+    color: var(--cor-principal);
+    font-size: 0.75rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cardActions button:hover {
+    text-decoration: underline;
+}
+
+.actionIcon {
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
