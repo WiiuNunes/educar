@@ -5,8 +5,13 @@
 ![Tech](https://img.shields.io/badge/Tech-Next.js%20%7C%20React%20%7C%20JavaScript-blueviolet)
 
 ## 📌 Sobre o Projeto
-O **Educar** é um produto de software desenhado e desenvolvido integralmente como MVP (Produto Mínimo Viável) do front-end para a entrega da disciplina de **Atividade Extensionista II**. 
-O objetivo principal da plataforma é promover a educação voltada para práticas de sustentabilidade e ecossistemas (foco acadêmico), incentivando metodologias de ensino digital entre docentes e alunos.
+Tornar o conteúdo educacional de sustentabilidade e curricular acessível aos alunos do ensino fundamental e médio, de forma interdisciplinar, sustentável e integradora, por meio de uma plataforma digital.
+
+**Objetivos específicos:**
+- Desenvolver a conscientização ambiental.
+- Implementar a produção do conhecimento interdisciplinar pelos professores.
+- Tornar o conteúdo educacional acessível para alunos com dificuldades de acesso à cultura digital.
+- Incentivar o engajamento da comunidade escolar em ações sustentáveis.
 
 ## 🚀 Arquitetura e Linguagens Utilizadas
 Como estudante concluinte de Análise e Desenvolvimento de Sistemas (ADS), decidi fugir do básico e implementar um front-end moderno, robusto e flexível. As principais tecnologias implementadas na codificação foram:
@@ -22,26 +27,5 @@ Separei a experiência de uso usando o esqueleto clássico do RBAC (Role-Based A
 3. **Dashboard do Professor**: CRUD estrutural simulado (Criar Atividade, Gerenciar Cursos) mapeando o Painel do Docente via HOC (Higher-Order Component).
 4. **Sistema de Notificações**: Dropdown customizado de feed de avisos isolado em um componente pai na camada mais funda do Layout (respeitando o princípio DRY - *Don't Repeat Yourself*).
 
-## ⚙️ Como executar o projeto localmente
-Para a banca examinadora ou professores que farão a revisão do código local:
-
-1. Realize o clone deste repositório na sua máquina:
-   ```bash
-   git clone https://github.com/WiiuNunes/educar.git
-   ```
-2. Acesse a pasta recém criada:
-   ```bash
-   cd educar
-   ```
-3. Instale os módulos de dependências e dependências de desenvolvimento do Node.js:
-   ```bash
-   npm install
-   ```
-4. Suba o servidor de desenvolvimento na sua porta local:
-   ```bash
-   npm run dev
-   ```
-5. Abra o navegador acessando [http://localhost:3000](http://localhost:3000) e teste a plataforma.
-
 ---
-> *Software documentado e codificado como trabalho universitário em Análise e Desenvolvimento de Sistemas. Finalizado com sucesso para entrega à banca.* 🧑‍💻📚
+> *Software documentado e codificado como trabalho universitário em Análise e Desenvolvimento de Sistemas. Finalizado com sucesso para entrega à banca sistêmica através de infraestrutura Serverless.* 🧑‍💻📚
