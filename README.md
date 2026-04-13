@@ -26,3 +26,4 @@ Separei a experiência de uso usando o esqueleto clássico do RBAC (Role-Based A
 2. **Dashboard do Aluno**: Acesso direto a materiais em Query Params nativos, filtros computacionais da base de dados executando em O(n), barra de progresso em tempo real e guias unificadas (`Meus Cursos > Atividades`).
 3. **Dashboard do Professor**: CRUD estrutural simulado (Criar Atividade, Gerenciar Cursos) mapeando o Painel do Docente via HOC (Higher-Order Component).
 4. **Sistema de Notificações**: Dropdown customizado de feed de avisos isolado em um componente pai na camada mais funda do Layout (respeitando o princípio DRY - *Don't Repeat Yourself*).
+
