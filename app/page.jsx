@@ -18,9 +18,22 @@ export default function LoginPage() {
   const [tipoUsuario, setTipoUsuario] = useState("aluno");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
+  const [erro, setErro] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
+    setErro("");
+
+    // Barreira de autenticação
+    if (!email || !senha) {
+      setErro("Por favor, preencha todos os campos.");
+      return;
+    }
+    if (senha !== "123456") {
+      setErro("Credenciais inválidas. (Dica: a senha mockada é 123456)");
+      return;
+    }
+
     // Simulação do backend
     if (tipoUsuario === "aluno") {
       router.push("/aluno");
@@ -39,6 +52,12 @@ export default function LoginPage() {
 
       <div className={styles.formContainer}>
         <h2>Login</h2>
+
+        {erro && (
+          <div style={{ backgroundColor: '#ffebee', color: '#c62828', padding: '10px', borderRadius: '4px', marginBottom: '15px', fontSize: '0.9rem', border: '1px solid #ef9a9a' }}>
+            ⚠️ {erro}
+          </div>
+        )}
 
         <form onSubmit={handleLogin}>
           <div className={styles.radioGroup}>
